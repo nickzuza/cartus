@@ -1032,6 +1032,11 @@ select {
 .scr-no {
   overflow: hidden;
 }
+@media (min-width: 1170px) and (max-width: 69999px) {
+  .scr-no {
+    padding-right: 17px;
+  }
+}
 .img {
   background-position: center;
   background-repeat: no-repeat;
@@ -1181,6 +1186,111 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+}
+.header .preloader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: none;
+}
+.header .preloader-wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@-webkit-keyframes load {
+  0%,
+  100% {
+    width: 20px;
+    height: 20px;
+    background-color: #30312b;
+    -webkit-box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  25%,
+  75% {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #5b6c40;
+    -webkit-box-shadow: inset 5px 3px 10px rgba(255, 255, 255, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 5px 3px 10px rgba(255, 255, 255, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+    background-color: #30312b;
+    -webkit-box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes load {
+  0%,
+  100% {
+    width: 20px;
+    height: 20px;
+    background-color: #30312b;
+    -webkit-box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  25%,
+  75% {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #5b6c40;
+    -webkit-box-shadow: inset 5px 3px 10px rgba(255, 255, 255, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 5px 3px 10px rgba(255, 255, 255, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+    background-color: #30312b;
+    -webkit-box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 5px 3px 10px -10px rgba(255, 255, 255, 0), 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+.header .preloader-pin1,
+.header .preloader-pin2,
+.header .preloader-pin3 {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(91, 108, 64, 0.5);
+  border-radius: 20px;
+  -webkit-animation-name: load;
+          animation-name: load;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin: 0 20px;
+}
+.header .preloader-pin2 {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+.header .preloader-pin3 {
+  -webkit-animation-delay: 0.30s;
+          animation-delay: 0.30s;
 }
 .header-top {
   width: 100%;

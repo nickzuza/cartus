@@ -16,6 +16,14 @@
 </head>
 <body >
 <header class="header">
+    <div class="preloader">
+        <div class="preloader-wrap">
+            <div class="preloader-pin1"></div>
+            <div class="preloader-pin2"></div>
+            <div class="preloader-pin3"></div>
+        </div>
+
+    </div>
     <div class="header-top">
         <div class="header-top-wrapper">
             <a href="#" class="logo" style="background-image: url(/img/logo.png)"></a>

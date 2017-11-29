@@ -15189,6 +15189,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS
 /***/ (function(module, exports) {
 
 window.addEventListener('load', function () {
+    window.preloader = function () {
+        var preload = document.getElementsByClassName('preloader')[0];
+        if (preload.style.display !== 'block') {
+            Velocity(preload, 'fadeIn', { duration: 300 });
+            document.querySelector('html , body').classList.add('scr-no');
+        } else {
+            Velocity(preload, 'fadeOut', { duration: 300 });
+            document.querySelector('html , body').classList.remove('scr-no');
+        }
+    };
     document.getElementsByClassName('footer-menu-title')[0].addEventListener('click', function (e) {
         var el = e.currentTarget;
 
