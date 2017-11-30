@@ -38,3 +38,6 @@ Route::get('/docPage', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+Route::get('/404', function () {
+    return view('404');
+});

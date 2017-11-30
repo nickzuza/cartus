@@ -4707,3 +4707,60 @@ select {
 .contactsPage form .submit:hover {
   background-color: #bdc8ac!important;
 }
+.page404-wrapper {
+  margin: 0 auto;
+  width: 1170px;
+  min-height: 400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #555;
+}
+@media (min-width: 2px) and (max-width: 1169px) {
+  .page404-wrapper {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 2px) and (max-width: 1169px) {
+  .page404-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.page404-wrapper .c404 {
+  margin-right: 40px;
+  font-size: 140px;
+  color: #5b6c40;
+  background-size: contain;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("/img/callBackM.png");
+  background-image: linear-gradient(transparent, transparent), url("/img/callBackM.png");
+  background: -webkit-linear-gradient(transparent, transparent), url(/img/callBackM.png) repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+@media (min-width: 2px) and (max-width: 1169px) {
+  .page404-wrapper .c404 {
+    margin-right: 0;
+  }
+}
